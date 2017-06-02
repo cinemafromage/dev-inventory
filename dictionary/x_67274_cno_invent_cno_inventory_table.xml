@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="CNO Inventory Table" max_length="40" name="x_67274_cno_invent_cno_inventory_table" sizeclass="13774" type="collection">
+        <element label="Asset Tag" max_length="40" name="asset_tag" type="integer"/>
+        <element label="Branch Number" max_length="40" name="branch_number" type="string"/>
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element label="Fax" sequence="0" value="Fax"/>
+                <element label="Laptop" sequence="0" value="Laptop"/>
+                <element label="Media" sequence="0" value="Media"/>
+                <element label="MFD" sequence="0" value="MFD"/>
+                <element label="Monitor" sequence="0" value="Monitor"/>
+                <element label="PC" sequence="0" value="PC"/>
+                <element label="Plotter" sequence="0" value="Plotter"/>
+                <element label="Printer" sequence="0" value="Printer"/>
+                <element label="Scanner" sequence="0" value="Scanner"/>
+                <element label="Server" sequence="0" value="Server"/>
+                <element label="Shredder" sequence="0" value="Shredder"/>
+                <element label="tablet" sequence="0" value="tablet"/>
+                <element label="Thin Client" sequence="0" value="Thin Client"/>
+                <element label="VM" sequence="0" value="VM"/>
+            </choice>
+        </element>
+        <element label="Cost Center" max_length="40" name="cost_center" type="integer"/>
+        <element label="Deployment Date" max_length="40" name="deployment_date" type="glide_date"/>
+        <element label="Hardware Type" max_length="40" name="hardware_type" type="string"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="Location Code" max_length="40" name="location_code" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="PC Name" max_length="40" name="pc_name" type="string"/>
+        <element label="PO Number" max_length="40" name="po_number" type="integer"/>
+        <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element display="true" label="User ID" max_length="40" name="user_id" type="string"/>
+        <element label="User Name" max_length="40" name="user_name" type="string"/>
+        <element label="Warranty Expiration" max_length="40" name="warranty_expiration" type="glide_date"/>
+    </element>
+</database>
